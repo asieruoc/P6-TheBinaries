@@ -1,0 +1,7 @@
+NOTAS DEL CODIGO CONEXION
+
+
+1. A conexion le asignamos como parametros las 4 variables antes declaradas
+2. Si la conexión coincide con error, entonces salta mensaje de error y le anyadimos la clausula
+para que aparezca tambien el error tecnico de conexion con la Base de Datos. 
+3. die = salir --> va acompanyado de un string para escribir el mensaje
