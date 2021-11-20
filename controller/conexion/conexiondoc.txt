@@ -1,0 +1,15 @@
+Paso 1.Haciendo uso de la POO creamos una clase conexion, que contendra un array asociativo con todas los atributos
+que necesitamos de cara a la conexion a la Base de Datos. 
+
+Paso 2. Comprobamos que todos los atributos son correctos y sobretodo 
+que se conecte a la Base de Datos mencionada.
+
+
+Paso 3. Llamamos al constructor
+
+Paso 4. Creamos una funcion llamada conectar, y a partir de un try-catch comprobamos la conexion
+a la Base de Datos. Si las credenciales son correctas, se imprimira un mensaje de exito y si falla, 
+saldra mensaje de error.  
+
+Paso 5. Devolvemos un array con los atributos necesarios.
+
