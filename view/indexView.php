@@ -30,7 +30,7 @@ require($header);
             </div>
         </header>
         <main>
-            <h2>Inicie sesión o regístrese para acceder a la <strong> APLICACIÓN DE HORARIOS</strong></h2>
+            <h2> <strong> APLICACIÓN DE HORARIOS</strong></h2>
 
         </main>
 </body>

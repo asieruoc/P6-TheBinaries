@@ -1,0 +1,1 @@
+<!--Almacenar constantes globales con define()-->
