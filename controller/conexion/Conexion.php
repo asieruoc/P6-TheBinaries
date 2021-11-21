@@ -6,7 +6,7 @@ private $conexion;
 private $configuracion = [
     "driver" => "mysql",
     "host" => "localhost",
-    "database" => "phpcalendar",
+    "database" => "p6_thebinaries",
     "port" => "3306",
     "username" => "root",
     "password" => "",
@@ -46,7 +46,7 @@ return array(
     "host"      =>"localhost",
     "user"      =>"root",
     "pass"      =>"root",
-    "database"  =>"phpcalendar",
+    "database"  =>"p6_thebinaries",
     "charset"   =>"utf8"
 );
 
