@@ -8,12 +8,12 @@ function listarProfesores($lista){
     echo("<tbody>");
     foreach($lista as $teacher){
         ?>
-        <tr>
-
+        <tr>  
+        
         <td style='float:left; margin-left:10%;'>
             <?php echo($teacher->id_teacher) ?></td>
         <td style='float:left; margin-left:10px;'>
-            <?php echo($teacher->name) ?></td>
+            <?php echo($teacher->name) ?></td>            
         <td style='float:left; margin-left:10px;'>
             <?php echo($teacher->surname) ?></td>
         <?php
@@ -29,15 +29,15 @@ function listarProfesores($lista){
             <!-- <button data-toggle="modal" data-target="#teachersMod" class='btn btn-warning btn-listado' type='button' name='modificarProfesor' value=<?php echo($teacher->id_teacher); ?>>Modificar</button> -->
             <input class='btn btn-warning btn-listado' type='submit' name='modificarProfesor' value="Alterar Registro">
         </form>
-
+        
         <?php
-
+        
         echo("</td>");
-
+        
         echo("</tr>");
-
+        
     }
-
+    
     echo("</tbody>");
     echo("</table");
     echo("</div");
@@ -49,12 +49,12 @@ function listarAgenda($lista){
     echo("<tbody>");
     foreach($lista as $agenda){
         ?>
-        <tr>
-
+        <tr>  
+        
         <td style='float:left; margin-left:10%;'>
             <?php echo($agenda->id_schedule) ?></td>
         <td style='float:left; margin-left:10px;'>
-            <?php echo($agenda->id_class) ?></td>
+            <?php echo($agenda->id_class) ?></td>            
         <td style='float:left; margin-left:10px;'>
             <?php echo($agenda->time_start) ?></td>
         <td style='float:left; margin-left:10px;'>
@@ -73,7 +73,7 @@ function listarAgenda($lista){
             <!-- <button data-toggle="modal" data-target="#teachersMod" class='btn btn-warning btn-listado' type='button' name='modificarProfesor' value=<?php echo($teacher->id_teacher); ?>>Modificar</button> -->
             <input class='btn btn-warning btn-listado' type='submit' name='modificarAgenda' value="Alterar Registro">
         </form>
-
+        
         <?php
         echo("</td></tr>");
     }
@@ -83,24 +83,24 @@ function listarAgenda($lista){
 }
 
 function listarCursos($lista){
-
+    
     echo("<div class='table-responsive-sm'>");
     echo("<table class='table tabla'>");
     echo("<tbody>");
     foreach($lista as $cursos){
         ?>
-        <tr>
-
-
+        <tr>  
+        
+        
         <td style='float:left; margin-left:10px;'>
-            <?php echo($cursos->name) ?></td>
+            <?php echo($cursos->name) ?></td>            
         <td style='float:left; margin-left:10px;'>
             <?php echo($cursos->description) ?></td>
         <td style='float:left; margin-left:10px;'>
             <?php echo($cursos->date_start) ?></td>
         <td style='float:left; margin-left:10px;'>
             <?php echo($cursos->date_end) ?></td>
-
+        
         <?php
         echo("<td>");
         ?>
@@ -114,14 +114,14 @@ function listarCursos($lista){
             <!-- <button data-toggle="modal" data-target="#teachersMod" class='btn btn-warning btn-listado' type='button' name='modificarProfesor' value=<?php echo($teacher->id_teacher); ?>>Modificar</button> -->
             <input class='btn btn-warning btn-listado' type='submit' name='modificarCurso' value="Alterar Registro">
         </form>
-
+        
         <?php
         echo("</td></tr>");
     }
     echo("</tbody>");
     echo("</table");
     echo("</div");;
-
+   
 }
 
 function listarClases($lista){
@@ -130,12 +130,12 @@ function listarClases($lista){
     echo("<tbody>");
     foreach($lista as $clases){
         ?>
-        <tr>
-
+        <tr>  
+        
         <td style='float:left; margin-left:10%;'>
             <?php echo($clases->id_class) ?></td>
         <td style='float:left; margin-left:10px;'>
-            <?php echo($clases->id_teacher) ?></td>
+            <?php echo($clases->id_teacher) ?></td>            
         <td style='float:left; margin-left:10px;'>
             <?php echo($clases->id_course) ?></td>
         <td style='float:left; margin-left:10px;'>
@@ -155,7 +155,7 @@ function listarClases($lista){
             <!-- <button data-toggle="modal" data-target="#teachersMod" class='btn btn-warning btn-listado' type='button' name='modificarProfesor' value=<?php echo($teacher->id_teacher); ?>>Modificar</button> -->
             <input class='btn btn-warning btn-listado' type='submit' name='modificarCurso' value="Alterar Registro">
         </form>
-
+        
         <?php
         echo("</td></tr>");
     }
@@ -169,12 +169,12 @@ function listarStudent($lista){
     echo("<tbody>");
     foreach($lista as $clases){
         ?>
-        <tr>
-
+        <tr>  
+        
         <td style='float:left; margin-left:10%;'>
             <?php echo($clases->id) ?></td>
         <td style='float:left; margin-left:10px;'>
-            <?php echo($clases->username) ?></td>
+            <?php echo($clases->username) ?></td>            
         <td style='float:left; margin-left:10px;'>
             <?php echo($clases->email) ?></td>
         <td style='float:left; margin-left:10px;'>
@@ -195,7 +195,7 @@ function listarStudent($lista){
             <input type="hidden" name="date2student" value=<?php echo($clases->date_registered); ?>>
             <input class='btn btn-warning btn-listado' type='submit' name="" value="Alterar Registro">
         </form>
-
+        
         <?php
         echo("</td></tr>");
     }
@@ -210,12 +210,12 @@ function listarEnrollment($lista){
     echo("<tbody>");
     foreach($lista as $clases){
         ?>
-        <tr>
-
+        <tr>  
+        
         <td style='float:left; margin-left:10%;'>
             <?php echo($clases->id_student) ?></td>
         <td style='float:left; margin-left:10px;'>
-            <?php echo($clases->id_course) ?></td>
+            <?php echo($clases->id_course) ?></td>            
         <td style='float:left; margin-left:10px;'>
             <?php echo($clases->status) ?></td>
         <?php
@@ -228,14 +228,13 @@ function listarEnrollment($lista){
             <input type="hidden" name="status2Enroll" value=<?php echo($clases->status); ?>>
             <input class='btn btn-warning btn-listado' type='submit' name="" value="Alterar Registro">
         </form>
-
+        
         <?php
         echo("</td></tr>");
     }
     echo("</table");
 
 }
-
 
 ?>
 

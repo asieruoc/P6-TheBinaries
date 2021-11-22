@@ -1,6 +1,4 @@
 <?php
-
-
 class Crud {
 
     protected $tabla;

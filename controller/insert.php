@@ -1,12 +1,11 @@
 <?php
-
 session_start();
-require_once("conexion/Conexion.php");
+require_once("config/Conexion.php");
 require_once("crud/Crud.php");
 
 //$_SESSION['idProfesor']=$_POST['id2Profesor'];
 
-//sesiones profesor
+//Sesiones profesor
 if (isset($_POST["name"])){
     $_SESSION['nameProfesor']=$_POST["name"];
     $_SESSION['surnameProfesor']=$_POST["surname"];
@@ -18,7 +17,7 @@ if (isset($_POST["name"])){
 //Modificar Profesor
 if(isset($_SESSION["nameProfesor"])&&!(empty($_SESSION["nameProfesor"]))&&$_POST['accion']=='ModificarPro'){
 
-
+  
     $id=$_SESSION['idProfesor'];
     $name=$_SESSION['nameProfesor'];
     $surname=$_SESSION['surnameProfesor'];
@@ -27,7 +26,7 @@ if(isset($_SESSION["nameProfesor"])&&!(empty($_SESSION["nameProfesor"]))&&$_POST
     $email=$_SESSION['emailProfesor'];
     $crud = new Crud("teachers");
     $crud->where("id_teacher","=",$id)->update([
-        "id_teacher"=>$id,
+        "id_teacher"=>$id,  
         "name"=>$name,
         "surname"=>$surname,
         "telephone"=>$telephone,
@@ -66,7 +65,7 @@ if(isset($_POST['name_curso'])&&!(empty($_POST['name_curso']))&&$_POST['accion']
     $activo=$_POST['activo'];
     $crud = new Crud("courses");
     $crud->where("id_course","=",$id)->update([
-        "id_course"=>$id,
+        "id_course"=>$id,  
         "name"=>$name,
         "description"=>$description,
         "date_start"=>$inicio,
@@ -101,7 +100,7 @@ if(isset($_POST['id_class_agenda'])&&!(empty($_POST['id_class_agenda']))&&$_POST
     $dia=$_POST['dia_agenda'];
     $crud = new Crud("schedule");
     $crud->where("id_schedule","=",$id)->update([
-        "id_schedule"=>$id,
+        "id_schedule"=>$id,  
         "id_class"=>$idAgenda,
         "time_start"=>$inicioA,
         "time_end"=>$finA,
@@ -138,7 +137,7 @@ if(isset($_POST['nombre_clase'])&&!(empty($_POST['nombre_clase']))&&$_POST['acci
     $color=$_POST['color_clase'];
     $crud = new Crud("class");
     $crud->where("id_class","=",$id)->update([
-        "id_class"=>$id,
+        "id_class"=>$id,  
         "id_teacher"=>$idprofesorC,
         "id_course"=>$idcursoC,
         "id_schedule"=>$idagendaC,
@@ -215,7 +214,7 @@ if(isset($_POST['stuEnroll'])&&!(empty($_POST['stuEnroll']))&&$_POST['accion']==
     $statusA=$_POST['statusSelect'];
     $crud = new Crud("enrollment");
     $crud->where("id_enrollment","=",$id)->update([
-        "id_enrollment"=>$id,
+        "id_enrollment"=>$id,  
         "id_student"=>$idstu,
         "id_course"=>$idcurso,
         "status"=>$status
@@ -244,10 +243,10 @@ if(isset($_POST['stuEnroll'])&&!(empty($_POST['stuEnroll']))&&$_POST['accion']==
 
 
 if(isset($_POST["crear"])&&!(empty($_POST["crear"]))){
-
+    
     $btn=$_POST["crear"];
 
-
+    
 
     switch($btn){
 
@@ -275,7 +274,7 @@ if(isset($_POST["crear"])&&!(empty($_POST["crear"]))){
             //echo("<script> alert('Eliminar'); </script>");
             insertEnroll();
             break;
-
+        
     }
 }
 
@@ -296,7 +295,7 @@ function insertEnroll(){
     ]);
 
     $_SESSION["trueInsert"]=true;
-    header("Location: ../view/admin.php");
+    header("Location: ../view/admin.php");  
 }
 
 function insertStudent(){
@@ -318,7 +317,7 @@ $crud = new Crud("students");
 #INSERT INTO
 $crud->insert([
     //omitimos id por ser autoincremental
-
+    
     "username" => $username,
     "pass" => $password,
     "email" => $email,
@@ -330,7 +329,7 @@ $crud->insert([
 ]);
 
 $_SESSION["trueInsert"]=true;
-header("Location: ../view/admin.php");
+header("Location: ../view/admin.php");   
 
 }
 
@@ -348,7 +347,7 @@ $crud = new Crud('users_admin');
 
 #INSERT INTO
 $crud->insert([
-    //omitimos id por ser autoincremental
+    //Se omite id por ser autoincremental
     "username" => $name_admin,
     "name" => $surname_admin,
     "email" => $email_admin,
@@ -367,25 +366,25 @@ function insertarProfesor()
     $surname=$_POST["surname"];
     $telephone=$_POST["telephone"];
     $nif=$_POST["nif"];
-    $email=$_POST["email"];
-
+    $email=$_POST["email"];  
+        
     #gestionamos el alta
     $crud = new Crud("teachers");
-
+    
     #INSERT INTO
     $crud->insert([
-        //omitimos id por ser autoincremental
-
+        //Se omite  id por ser autoincremental
+        
         "name" => $name,
         "surname" => $surname,
         "telephone" => $telephone,
         "nif" => $nif,
         "email" => $email
-
+        
     ]);
     $exito=true;
     $_SESSION["trueInsert"]=true;
-    header("Location: ../view/admin.php");
+    header("Location: ../view/admin.php");    
     return $exito;
 }
 
@@ -400,24 +399,24 @@ function insertarCurso()
     $fin=$_POST["fin_curso"];
     //$agenda=$_POST["selectAgenda"];
     $activo=$_POST["activo"];
-
+        
     #gestionamos el alta
     $crud = new Crud("courses");
-
+    
     #INSERT INTO
     $crud->insert([
-        //omitimos id por ser autoincremental
-
+        //Se omite id por ser autoincremental
+        
         "name" => $name,
         "description" => $description,
         "date_start" => $inicio,
         "date_end" => $fin,
         "active" => $activo
-
+        
     ]);
     $exito=true;
     $_SESSION["trueInsert"]=true;
-    header("Location: ../view/admin.php");
+    header("Location: ../view/admin.php");    
     return $exito;
 }
 
@@ -430,25 +429,25 @@ function insertarAgenda()
     $inicio=$_POST["inicio_agenda"];
     $fin=$_POST["fin_agenda"];
     $dia=$_POST["dia_agenda"];
-
+        
     #gestionamos el alta
     $crud = new Crud("schedule");
-
+    
     #INSERT INTO
     $crud->insert([
-        //omitimos id por ser autoincremental
-
+        //Se omite id por ser autoincremental
+        
         "id_class" => $id_class,
         "time_start" => $inicio,
         "time_end" => $fin,
         "day" => $dia
-
+        
     ]);
     $exito=true;
     $_SESSION["trueInsert"]=true;
-    header("Location: ../view/admin.php");
+    header("Location: ../view/admin.php");    
     return $exito;
-
+    
 }
 
 function insertarClase()
@@ -464,32 +463,27 @@ function insertarClase()
     //echo($agenda);echo("<br>");
     $name=$_POST["nombre_clase"];
     $color =$_POST["color_clase"];
-
+ 
 
     #gestionamos el alta
     $crud = new Crud("class");
-
+    
     #INSERT INTO
     $crud->insert([
-        //omitimos id por ser autoincremental
-
-
+        //Se omite id por ser autoincremental
+        
+        
         "id_teacher" => $idprofesor,
         "id_course" => $idcurso,
         "id_schedule" => $idagenda,
         "name"=> $name,
         "color"=> $color
-
+        
     ]);
     $exito=true;
     $_SESSION["trueInsert"]=true;
-    header("Location: ../view/admin.php");
+    header("Location: ../view/admin.php");    
     return $exito;
-
+    
 }
-
-
-
-
-
 ?>
