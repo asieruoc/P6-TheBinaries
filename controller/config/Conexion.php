@@ -14,7 +14,7 @@ class Conexion {
     ];
 
     public function __construct() {
-        
+
     }
 
     public function conectar() {

@@ -1,5 +1,6 @@
 <?php
 
+
 class Crud {
 
     protected $tabla;
@@ -89,9 +90,9 @@ class Crud {
                 if (empty($valor)) {
                     $valor = NULL;
                 }
-
+               
                 $sth->bindValue(":$llave", $valor);
-
+                
             }
         }
         $sth->execute();
@@ -105,4 +106,3 @@ class Crud {
     }
 
 }
-?>
