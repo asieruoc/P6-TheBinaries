@@ -9,7 +9,7 @@ $head  = "templates/headerlogin.php";
 require($head);
 
 if (!(isset($_SESSION["login"]))){
-    echo "no estas logueado";
+    echo "No estás logueado";
     header("Location: ./login.php");
 }
 require_once '../controller/config/Conexion.php';

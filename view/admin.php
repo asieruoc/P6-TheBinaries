@@ -4,7 +4,7 @@ $head  = "templates/headerlogin.php";
 require($head);
 
 if (!(isset($_SESSION["admin"])) && !empty ($_SESSION['email'])){
-    echo "no estas logueado como admin";
+    echo "No estás logueado como administrador";
     header("Location: ./login.php");
 }
 
@@ -74,15 +74,10 @@ require_once '../controller/crud/Crud.php';
 include("../controller/listar.php");
 
 $crudClass= new Crud('class');
-
 $crudCourse= new Crud('courses');
-
 $crudTeachers= new Crud('teachers');
-
 $crudAgenda= new Crud('schedule');
-
 $crudStudent = new Crud("students");
-
 $crudEnroll = new Crud("enrollment");
 
 $listaClass = $crudClass->get();
@@ -130,7 +125,7 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 <?php
     if(isset($_SESSION["trueInsert"])&&($_SESSION["trueInsert"]==true)){
         $exitoBootstrapInsert = "<div class='alert alert-success' role='alert'>
-        Se ha insertado correctamente el dato en la BBDD
+        Se ha insertado correctamente en la BBDD
     </div>";
         echo($exitoBootstrapInsert);
         $_SESSION["trueInsert"]=false;
@@ -157,41 +152,41 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
     if(isset($name2)){
         //¿Seguro que quiere realizar la operación?
         ?>
-        <button name="desactivo" onclick="alterar(event);" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#teachers">Sí, realizar modificación</button>
+        <button name="desactivo" onclick="alterar(event);" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#teachers">Confirmar modificación</button>
         <?php
         $_SESSION['idProfesor']=$_POST['id2Profesor'];
     } else if (isset($nameCurso2)){
         //¿Seguro que quiere realizar la operación?
         ?>
-        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#course">Sí, realizar modificación</button>
+        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#course">Confirmar modificación</button>
         <?php
         $_SESSION['idCurso']=$_POST['id2Curso'];
 
     }else if (isset($idclassAgenda2)){
         //¿Seguro que quiere realizar la operación?
         ?>
-        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#agenda">Sí, realizar modificación</button>
+        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#agenda">Confirmar modificación</button>
         <?php
         $_SESSION['id2Agenda']=$_POST['id2Agenda'];
 
     }else if (isset($name2class)){
         //¿Seguro que quiere realizar la operación?
         ?>
-        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#clase">Sí, realizar modificación</button>
+        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#clase">Confirmar modificación</button>
         <?php
         $_SESSION['idclass']=$_POST['id2class'];
 
     }else if (isset($username2student)){
         //¿Seguro que quiere realizar la operación?
         ?>
-        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#students">Sí, realizar modificación</button>
+        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#students">Confirmar modificación</button>
         <?php
         $_SESSION['idstudent']=$_POST['id2student'];
 
     }else if (isset($status2Enroll)){
         //¿Seguro que quiere realizar la operación?
         ?>
-        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#enroll">Sí, realizar modificación</button>
+        <button name="desactivo" value="alterar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#enroll">Confirmar modificación</button>
         <?php
         $_SESSION['idEnroll']=$_POST['id2Enroll'];
 
@@ -200,7 +195,8 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 </div>
 
   <div class="container">
-    <h1 class="display-4">Panel de Administración</h1>
+    <h1 class="display-4">Centro de Estudios The Binaries</h1>
+    <h2>Panel de Administración</h2>
     <div class="container">
     <ul class="list-group">
           <li class="btn btn-outline-success" button type="button" data-toggle="modal" data-target="#teachers" name="desactivo" value="anyadir"> Gestionar Profesores</li>
@@ -250,14 +246,12 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
                     <input class="form-control" type="email" required name="email" value=<?php if(isset($_POST["name2"])) echo($email2); ?> >
                 </div>
 <?php if(isset($_SESSION['idProfesor'])) $_SESSION['idProfesor']=$_POST['id2Profesor'];?>
-            <input class="btn btn-primary" type="submit" value="CreateProfesor" name="crear" />
 
             <div class="row alterarBD">
-                <div class="col-3">
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarPro">
-                </div>
-                <div class="col-3">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarPro">
+                <div class="col-12">
+                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar"/>
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar"/>
                 </div>
             </div>
 
@@ -308,16 +302,16 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
                     <label>Activo</label>
                     <input class="form-control" type="number" required name="activo" value=<?php if(isset($_POST["nameCurso2"])) echo($activoCurso2); ?>>
                 </div>
-            <input class="btn btn-primary" type="submit" value="CreateCurso" name="crear" />
+
 <?php if(isset($_SESSION['idCurso'])) $_SESSION['idCurso']=$_POST['id2Curso'];?>
 
             <div class="row alterarBD">
-                <div class="col-3">
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarCur">
+                <div class="col-12">
+                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminarr">
                 </div>
-                <div class="col-3">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarCur">
-                </div>
+
             </div>
         </form>
         </div><!--body modal -->
@@ -361,16 +355,15 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
                     <label>Día</label>
                     <input class="form-control" type="date" required name="dia_agenda" value=<?php if(isset($_POST["idclassAgenda2"])) echo($dayAgenda2); ?>>
                 </div>
-            <input class="btn btn-primary" type="submit" value="CreateAgenda" name="crear">
+
             
 <?php if(isset($_SESSION['id2Agenda'])) $_SESSION['id2Agenda']=$_POST['id2Agenda'];?>
 
             <div class="row alterarBD">
-                <div class="col-3">
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarAge">
-                </div>
-                <div class="col-3">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarAge">
+                <div class="col-12">
+                    <input class="btn btn-primary" type="submit" value="Crear" name="crear">
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
                 </div>
             </div>
         </form>
@@ -458,16 +451,15 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
                     <label>Color</label>
                     <input class="form-control" type="text" required name="color_clase" value=<?php if(isset($_POST["nameclass2"])) echo($color2class);?> >
                 </div>
-            <input class="btn btn-primary" type="submit" value="CreateClase" name="crear" />
+
         
 <?php if(isset($_SESSION['idclass'])) $_SESSION['idclass']=$_POST['id2class'];?>
 
             <div class="row alterarBD">
-                <div class="col-3">
+                <div class="col-12">
+                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
                     <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarClas">
-                </div>
-                <div class="col-3">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarClas">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
                 </div>
             </div>
         </form>
@@ -528,15 +520,14 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
                     <label>Email</label>
                     <input class="form-control" type="email" required name="email_stu" value=<?php if(isset($_POST["username2student"])) echo($email2student); ?> >
                 </div>
+
 <?php if(isset($_SESSION['idstudent'])) $_SESSION['idstudent']=$_POST['id2student'];?>
-            <input class="btn btn-primary" type="submit" value="CreateStudent" name="crear" />
 
             <div class="row alterarBD">
-                <div class="col-3">
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarStu">
-                </div>
-                <div class="col-3">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarStu">
+                <div class="col-12">
+                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
                 </div>
             </div>
 
@@ -544,7 +535,7 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
         </div>
         <div class="modal-footer">
             <form action="" method="post">
-                <input type="submit" class="btn btn-info" name="accion" value="ListarStudent">    
+                <input type="submit" class="btn btn-info" name="accion" value="ListarStudent">
             </form>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
@@ -606,16 +597,15 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
                     <label>Status</label>
                     <input class="form-control" type="number" required name="statusSelect" value=<?php if(isset($_POST["id2studentEnroll"])) echo($status2Enroll); ?> >
                 </div>
-            <input class="btn btn-primary" type="submit" value="CreateEnroll" name="crear" />
+
         
 <?php if(isset($_SESSION['idEnroll'])) $_SESSION['idEnroll']=$_POST['id2Enroll'];?>
 
             <div class="row alterarBD">
-                <div class="col-3">
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarEnroll">
-                </div>
-                <div class="col-3">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarEnroll">
+                <div class="col-12">
+                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
                 </div>
             </div>
         </form>
@@ -624,13 +614,11 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
             <form action="" method="post">
                 <input type="submit" class="btn btn-warning" name="accion" value="ListarEnroll">
             </form>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
         </div>
     </div>
     </div>
-
-    <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
   </div>
 </div>
 

@@ -38,12 +38,12 @@ require($head);
                      <form method="post" action="" name="login">
                         <div class="form-group">
                             <label>Email</label>
-                            <input class="form-control" type="text" require name="email_login" placeholder="Enter your email" />
+                            <input class="form-control" type="text" require name="email_login" placeholder="Introduce tu email" />
                         </div>
 
                         <div class="form-group">
                             <label>Contraseña</label>
-                            <input class="form-control" type="text" require name="password_login" placeholder="Enter your password"/>
+                            <input class="form-control" type="text" require name="password_login" placeholder="Introduce tu contraseña"/>
                         </div>
 
                          <div class="col-md-12 text-center ">
@@ -59,12 +59,12 @@ require($head);
                             <p class="text-center">¿Aún no te has registrado?</p>
                          </div>
                          <div class="form-group text-center">
-                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
                                  Cuenta Estudiante
                              </button>
                         </div>
                         <div class="form-group text-center">
-                             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#admin">
+                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#admin">
                                 Cuenta Administrador
                              </button>
                          </div>
@@ -121,7 +121,7 @@ require($head);
                 <label>NIF</label>
                 <input class="form-control" type="text" required name="nif" />
             </div>
-            <input class="btn btn-primary" type="submit" value="Create" />
+            <input class="btn btn-primary" type="submit" value="Crear" />
         </form>
       </div>
       <div class="modal-footer">
@@ -159,7 +159,7 @@ require($head);
                 <label>Contraseña</label>
                 <input class="form-control" type="password" require name="password_admin" />
             </div>
-            <input class="btn btn-primary" type="submit" value="Create" />
+            <input class="btn btn-primary" type="submit" value="Crear" />
         </form>
       </div>
       <div class="modal-footer">
