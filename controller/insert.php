@@ -487,9 +487,4 @@ function insertarClase()
     return $exito;
     
 }
-
-
-
-
-
 ?>

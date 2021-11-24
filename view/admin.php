@@ -249,9 +249,9 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 
             <div class="row alterarBD">
                 <div class="col-12">
-                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar"/>
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar"/>
+                    <input class="btn btn-primary" type="submit" value="CreateProfesor" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarPro"/>
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarPro"/>
                 </div>
             </div>
 
@@ -259,7 +259,7 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
         </div>
         <div class="modal-footer">
             <form action="" method="post">
-                <input type="submit" class="btn btn-info" name="accion" value="ListarProfesor">    
+                <input type="submit" class="btn btn-info" name="accion" value="ListarProfesor">
             </form>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
@@ -307,9 +307,9 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 
             <div class="row alterarBD">
                 <div class="col-12">
-                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminarr">
+                    <input class="btn btn-primary" type="submit" value="CreateCurso" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarCur">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarCur">
                 </div>
 
             </div>
@@ -317,7 +317,7 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
         </div><!--body modal -->
         <div class="modal-footer">
             <form action="" method="post">
-                <input type="submit" class="btn btn-info" name="accion" value="ListarCurso">    
+                <input type="submit" class="btn btn-info" name="accion" value="ListarCurso">
             </form>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
@@ -361,9 +361,9 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 
             <div class="row alterarBD">
                 <div class="col-12">
-                    <input class="btn btn-primary" type="submit" value="Crear" name="crear">
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
+                    <input class="btn btn-primary" type="submit" value="CreateAgenda" name="crear">
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarAge">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarAge">
                 </div>
             </div>
         </form>
@@ -457,9 +457,9 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 
             <div class="row alterarBD">
                 <div class="col-12">
-                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarClas">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
+                    <input class="btn btn-primary" type="submit" value="CreateClase" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarClasClas">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarClas">
                 </div>
             </div>
         </form>
@@ -525,9 +525,9 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 
             <div class="row alterarBD">
                 <div class="col-12">
-                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
+                    <input class="btn btn-primary" type="submit" value="CreateStudent" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarStu">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarStu">
                 </div>
             </div>
 
@@ -603,9 +603,9 @@ if(isset($_POST["accion"])&&!(empty($_POST["accion"]))){
 
             <div class="row alterarBD">
                 <div class="col-12">
-                    <input class="btn btn-primary" type="submit" value="Crear" name="crear" />
-                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="Modificar">
-                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="Eliminar">
+                    <input class="btn btn-primary" type="submit" value="CreateEnroll" name="crear" />
+                    <input type="submit" class="btn btn-warning float-left btn-listado" name="accion" value="ModificarEnroll">
+                    <input type="submit" class="btn btn-danger btn-listado" name="accion" value="EliminarEnroll">
                 </div>
             </div>
         </form>

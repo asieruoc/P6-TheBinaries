@@ -40,7 +40,7 @@ if (!(isset($_SESSION["login"]))){
         </div>
         <!--Columna Derecha-->
         <div class="col">
-            <p><h3>Información usuari</h3></p>
+            <p><h3>Información usuario</h3></p>
             <p>Nombre: <?php echo $_SESSION["name"]; ?> </p>
             <p>Apellidos: <?php echo $_SESSION["surname"]; ?> </p>
             <p>Nombre usuario: <?php echo $_SESSION["username"]; ?> </p>
@@ -91,10 +91,10 @@ if (!(isset($_SESSION["login"]))){
                 </button>
             </div>
             <div class="modal-body">
-                <p>Puedes modificar tus datos de perfil de usuario rellenando los campos requeridos "name",
+                <p>Modifica los datos de tu perfil de usuario rellenando los campos requeridos en "name",
                     "email" y "password".</p>
-                <p>A continuación pulsa sobre el botón "Save" y podrás guardar tus cambios.</p>
-                <p>En el próximo login con este usuario, podrás usar tus nuevos datos de autenticación.</p>
+                <p>A continuación, debes pulsar sobre el botón "Save" y podrás guardar tus cambios.</p>
+
             </div>
         </div>
     </div>
