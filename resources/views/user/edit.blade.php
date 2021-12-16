@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <h1>En esta pagina podras editar un cursos</h1>
+    <h1>Creación de Cursos/h1>
 
 
 
@@ -62,7 +62,7 @@
 
 
         <br>
-        <button type="submit">Actualizar uasuario</button>
+        <button type="submit">Actualizar usuario</button>
 
     </form>
 

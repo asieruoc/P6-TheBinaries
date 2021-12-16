@@ -1,6 +1,5 @@
 @extends('layouts.app')
-
-@section('title', 'Indice de asiganturas')
+@section('title', 'Listado de asignaturas')
 
 @section('template_title')
     Asignatura
@@ -19,7 +18,7 @@
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('asignaturas.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('asignaturas.create') }}" class="btn btn-success float-right"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
                               </div>

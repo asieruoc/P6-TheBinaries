@@ -9,7 +9,7 @@ class Calendar extends Model
     protected $table = 'schedules';
 
     static $rules = [
-        'id' => 'reuired',
+        'id' => 'required',
         'time_start' => 'required',
         'time_end' => 'required',
         'day' => 'required',

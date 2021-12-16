@@ -17,7 +17,7 @@
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('works.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('works.create') }}" class="btn btn-success btn-sm float-right"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
                               </div>
@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Id Class</th>
 										<th>Id Student</th>
 										<th>Name</th>
@@ -48,7 +48,7 @@
                                     @foreach ($works as $work)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $work->id_class }}</td>
 											<td>{{ $work->id_student }}</td>
 											<td>{{ $work->name }}</td>

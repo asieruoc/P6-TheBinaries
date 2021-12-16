@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <h1>En esta pagina podras editar un cursos</h1>
+    <h1>Editar un cursos</h1>
 
 
 

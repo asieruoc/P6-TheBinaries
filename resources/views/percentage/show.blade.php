@@ -14,7 +14,8 @@
                             <span class="card-title">Show Percentage</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('percentage.index') }}"> Back</a>
+                            <a class="btn btn-success
+" href="{{ route('percentage.index') }}"> Back</a>
                         </div>
                     </div>
 

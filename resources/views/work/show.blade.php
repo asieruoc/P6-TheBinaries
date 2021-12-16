@@ -14,12 +14,12 @@
                             <span class="card-title">Show Work</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('works.index') }}"> Back</a>
+                            <a class="btn btn-success" href="{{ route('works.index') }}"> Back</a>
                         </div>
                     </div>
 
                     <div class="card-body">
-                        
+
                         <div class="form-group">
                             <strong>Id Class:</strong>
                             {{ $work->id_class }}

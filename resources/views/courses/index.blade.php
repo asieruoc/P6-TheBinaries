@@ -1,10 +1,28 @@
 @extends('layouts.app')
-@section('title', 'Indice Cursos')
+@section('title', 'Listado de Cursos')
+
+@section('template_title')
+    Curso
+@endsection
+
 @section('content')
+<div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
 
-
-<h1>Bienvenido a la página principal de cursos</h1>
-<a href="{{route('courses.create')}}">Crear Curso</a>
+                            <span id="card_title">
+                                {{ __('course') }}
+                            </span>
+                            <div class="float-right">
+                                <a href="{{route('courses.create')}}" class="btn btn-success float-right"  data-placement="left">
+                                  {{ __('Create New') }}
+                                </a>
+                              </div>
+                        </div>
+                    </div>
 <ul>
     @foreach ($courses as $course)
     <li>

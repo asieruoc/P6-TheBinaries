@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property $id
  * @property $id_teacher
  * @property $id_course
- * @property $id_shedule
+ * @property $id_schedule
  * @property $name
  * @property $color
  * @property $created_at
@@ -21,11 +21,11 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Asignatura extends Model
 {
-    
+
     static $rules = [
 		'id_teacher' => 'required',
 		'id_course' => 'required',
-		'id_shedule' => 'required',
+		'id_schedule' => 'required',
 		'name' => 'required',
 		'color' => 'required',
     ];
@@ -37,7 +37,7 @@ class Asignatura extends Model
      *
      * @var array
      */
-    protected $fillable = ['id_teacher','id_course','id_shedule','name','color'];
+    protected $fillable = ['id_teacher','id_course','id_schedule','name','color'];
 
 
 

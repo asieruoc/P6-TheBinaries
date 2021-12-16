@@ -35,8 +35,8 @@
                         <p>Clases de Refuerzo</p>
                         <ul>
                             <li>Regístrate para acceder a tu área de usuario.</li>
-                            <li>Podrás activar las notificaciones para recibir información.</li>
-                            <li>Podrás consultar vuestros datos de perfil y modificarlos si fuera necesario.</li>
+                            <li>Utiliza las notificaciones para recibir información del profesorado.</li>
+                            <li>Consulta los datos de tu perfil y modifícalos en caso de ser necesario.</li>
                         </ul>
                         <div class="hero__buttons">
                             @if (Route::has('login'))

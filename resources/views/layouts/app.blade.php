@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title> @yield('title') </title>
+    <title> P6-TheBinaries </title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -42,7 +42,7 @@
         ?>
         <nav id="sidebar" class="sidebar">
             <div class="sidebar__header">
-                <h3>Gestión académica</h3>
+                <h3>Área de Estudiantes</h3>
             </div>
             <ul class="list-unstyled components">
                 @auth
@@ -92,7 +92,7 @@
         <main>
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm px-5">
                 <div class="w-100 d-flex justify-content-between">
-                    {{-- link a crear crusos solo para adminisstrador --}}
+                    {{-- link a crear crusos solo para administrador --}}
                     @auth
                         <div>
                             <a class="navbar-brand" href="{{ url('/courses') }}">

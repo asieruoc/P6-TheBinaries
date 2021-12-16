@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('title', 'Muestra asignaturas')
 
 @section('template_title')
@@ -16,7 +15,7 @@
                             <span class="card-title">Show Asignatura</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('asignaturas.index') }}"> Back</a>
+                            <a class="btn btn-success" href="{{ route('asignaturas.index') }}"> Back</a>
                         </div>
                     </div>
 
@@ -32,7 +31,7 @@
                         </div>
                         <div class="form-group">
                             <strong>Id Shedule:</strong>
-                            {{ $asignatura->id_shedule }}
+                            {{ $asignatura->id_schedule }}
                         </div>
                         <div class="form-group">
                             <strong>Name:</strong>
@@ -46,7 +45,7 @@
                         if(!$exam){ ?>
                         <div class="form-group">
                             <strong>Name:</strong>
-                            <strong>No hay examenes:</strong>
+                            <strong>No hay exámenes:</strong>
                             <?php } else { ?>
                         <div class="form-group">
                             <strong>Examen:</strong>

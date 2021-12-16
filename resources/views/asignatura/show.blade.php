@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('title', 'Muestra asignaturas')
 
 @section('template_title')
@@ -16,7 +15,7 @@
                             <span class="card-title">Show Asignatura</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('asignaturas.index') }}"> Back</a>
+                            <a class="btn btn-success" href="{{ route('asignaturas.index') }}"> Back</a>
                         </div>
                     </div>
 
@@ -42,7 +41,7 @@
                             <strong>Color:</strong>
                             {{ $asignatura->color }}
                         </div>
-                       
+
                     </div>
                 </div>
             </div>

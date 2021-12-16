@@ -3,7 +3,7 @@
 @section('content')
 
 
-<h1>Bienvenido a la página principal de Usuarios</h1>
+<h1>Espacio de usuarios del Centro</h1>
 <a href="">Crear Usuario</a>
 <ul>
     @foreach ($users as $user)

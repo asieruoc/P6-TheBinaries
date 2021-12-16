@@ -32,7 +32,7 @@
                         @enderror
                     </div>
                     <div class="from-group">
-                        <button class="btn btn-primary btn-block">Enviar</button>
+                        <button class="btn btn-success btn-block">Enviar</button>
                     </div>
 
 

@@ -18,7 +18,7 @@
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('schedules.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                <a href="{{ route('schedules.create') }}" class="btn btn-success btn-sm float-right"  data-placement="left">
                                   {{ __('Create New') }}
                                 </a>
                               </div>

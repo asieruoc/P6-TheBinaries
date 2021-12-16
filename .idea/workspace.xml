@@ -1,7 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5eb8592-a2ce-41bc-b19b-6eb4b42ebcc0" name="Changes" comment="" />
+    <list default="true" id="e5eb8592-a2ce-41bc-b19b-6eb4b42ebcc0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Asignatura.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Asignatura.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Calendar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Calendar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asignatura/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asignatura/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asignatura/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asignatura/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asignatura/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asignatura/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asignatura/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asignatura/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/asignatura/showUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/asignatura/showUser.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/emails/notification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/notification.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/enrollment/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/enrollment/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/enrollment/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/enrollment/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/enrollment/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/enrollment/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exam/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exam/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exam/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exam/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exam/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exam/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mensaje/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mensaje/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/percentage/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/percentage/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/percentage/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/percentage/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/percentage/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/percentage/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/schedule/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/schedule/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/schedule/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/schedule/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/work/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/work/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/work/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/work/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/work/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/work/show.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +49,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1639601047097</updated>
       <workItem from="1639601049085" duration="4107000" />
-      <workItem from="1639683119130" duration="316000" />
+      <workItem from="1639683119130" duration="7507000" />
     </task>
     <servers />
   </component>
