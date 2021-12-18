@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <div class="from-group">
                         <select name="recipient_id"  class="form-control">
-                            <option value="">Seleciona el usuario</option>
+                            <option value="">Selecciona el usuario</option>
                             @foreach ($users as $user)
                                 <option value="{{$user->id}}">{{$user->name}}</option>
                             @endforeach
