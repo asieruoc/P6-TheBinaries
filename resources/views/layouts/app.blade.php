@@ -42,7 +42,7 @@
         ?>
         <nav id="sidebar" class="sidebar">
             <div class="sidebar__header">
-                <h3>Área de Estudiantes</h3>
+                <h3>Panel de usuarios</h3>
             </div>
             <ul class="list-unstyled components">
                 @auth
@@ -92,7 +92,7 @@
         <main>
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm px-5">
                 <div class="w-100 d-flex justify-content-between">
-                    {{-- link a crear crusos solo para administrador --}}
+                    {{-- link a crear cursos solo para administrador --}}
                     @auth
                         <div>
                             <a class="navbar-brand" href="{{ url('/courses') }}">

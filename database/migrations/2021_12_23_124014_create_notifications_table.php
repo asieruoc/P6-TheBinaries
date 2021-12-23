@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Percentages extends Migration
+class CreateNotificationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,8 @@ class Percentages extends Migration
      */
     public function up()
     {
-        Schema::create('percentages', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('id_course')->references('id')->on('courses');
-            $table->integer('id_class')->references('id')->on('asignaturas');
-            $table->float('continuous_assessment');
-            $table->float('exams');
-
+        Schema::create('notifications', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
         });
     }
@@ -31,6 +26,6 @@ class Percentages extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('notifications');
     }
 }

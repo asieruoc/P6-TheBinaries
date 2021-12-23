@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Schedule extends Migration
+class CreateUserAdminsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,9 @@ class Schedule extends Migration
      */
     public function up()
     {
-        Schema::create('schedules', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('id_class')->references('id')->on('asignaturas');
-            $table->dateTime('time_start');
-            $table->dateTime('time_end');
-            $table->date('day');
+        Schema::create('user_admins', function (Blueprint $table) {
+            $table->id();
             $table->timestamps();
-
-
         });
     }
 
@@ -32,6 +26,6 @@ class Schedule extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_admins');
     }
 }
