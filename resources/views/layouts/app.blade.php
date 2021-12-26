@@ -64,7 +64,7 @@
                     </li>
                     <li class="{{ (request()->is('exams')) ? 'active' : '' }}">
                         <a class="navbar-brand" href="{{ url('/exams') }}">
-                            {{ config('Examanes', 'Examenes') }}
+                            {{ config('Exámenes', 'Exámenes') }}
                         </a>
                     </li>
                     <li class="{{ (request()->is('works')) ? 'active' : '' }}">
@@ -160,7 +160,7 @@
 
                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                                 onclick="event.preventDefault();
-                                                                                                    document.getElementById('logout-form').submit();">
+                                                document.getElementById('logout-form').submit();">
                                                 {{ __('Logout') }}
                                             </a>
 
