@@ -16,21 +16,21 @@ class TodosSeeder extends Seeder
     public function run()
     {
         $useradmin = User::create([
-            'name' => 'admin paul',
-            'email' => 'admin@gmail.com',
+            'name' => 'admin1',
+            'email' => 'admin1@thebinaries.com',
             'password' => Hash::make('admin'),
             'tipo' => '1',
         ]);
 
         $user1 = User::create([
-            'name' => 'usuario Marcos',
-            'email' => 'user@gmail.com',
+            'name' => 'usuario Carlos',
+            'email' => 'carlos@thebinaries.com',
             'password' => Hash::make('admin'),
             'tipo' => '2',
         ]);
         $user1 = User::create([
-            'name' => 'usuario Moderador',
-            'email' => 'moderador@gmail.com',
+            'name' => 'usuario Lorena',
+            'email' => 'lorena@thebinaries.com',
             'password' => Hash::make('admin'),
             'tipo' => '3',
         ]);
