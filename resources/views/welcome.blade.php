@@ -31,7 +31,7 @@
             <section class="hero" style="background-image: url({{asset('images/fondo.jpg')}})">
                 <div class="container">
                     <div class="hero__content">
-                        <h1><span>Centro de Estudios Online</span></h1>
+                        <h1><span>Centro de Estudios The Binaries</span></h1>
                         <p>Clases de Refuerzo</p>
                         <ul>
                             <li>Regístrate para acceder a tu área de usuario.</li>
@@ -43,7 +43,7 @@
                                 @auth
                                     <a class="btn btn-outline-success" href="{{ url('/Entrar') }}" class="text-sm text-gray-700 underline">Home</a>
                                 @else
-                                    <a class="btn btn-outline-success" href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+                                    <a class="btn btn-outline-success" href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
                                     @if (Route::has('register'))
                                         <a class="btn btn-outline-success" href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>

@@ -1,6 +1,11 @@
 @extends('layouts.app')
+@section('title', 'Muestra cursos')
 
-@section('title', $course->name)
+@section('template_title')
+    {{ $course->name ?? 'Show Course' }}
+@endsection
+
+
 
 
 @section('content')

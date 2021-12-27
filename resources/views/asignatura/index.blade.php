@@ -53,7 +53,7 @@
 
 											<td>{{ $asignatura->id_teacher }}</td>
 											<td>{{ $asignatura->id_course }}</td>
-											<td>{{ $asignatura->id_shedule }}</td>
+											<td>{{ $asignatura->id_schedule }}</td>
 											<td>{{ $asignatura->name }}</td>
 											<td>{{ $asignatura->color }}</td>
 

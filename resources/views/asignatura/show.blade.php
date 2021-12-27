@@ -30,8 +30,8 @@
                             {{ $asignatura->id_course }}
                         </div>
                         <div class="form-group">
-                            <strong>Id Shedule:</strong>
-                            {{ $asignatura->id_shedule }}
+                            <strong>Id Schedule:</strong>
+                            {{ $asignatura->id_schedule }}
                         </div>
                         <div class="form-group">
                             <strong>Name:</strong>
