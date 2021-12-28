@@ -5,9 +5,9 @@
 
 @section('content')
     <h1>Bienvenido al usuario: {{$user->name}} </h1>
-    <a href="{{route('user.index')}}">Volver a Ususarios</a>
+    <a href="{{route('user.index')}}">Volver a Usuarios</a>
     <br>
-    <a href="{{route('user.edit',$user)}}">Editar curso</a>
+    <a href="{{route('user.edit',$user)}}">Editar usuario</a>
 
     <p><strong>Categoria: </strong>{{$user->name}}</p>
     <p><Strong>Email: </Strong>{{$user->email}}</p>

@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <h1>Creación de Cursos</h1>
+    <h1>Espacio de edición de usuario</h1>
 
 
 
