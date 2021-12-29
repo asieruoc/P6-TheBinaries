@@ -16,22 +16,28 @@ class CoursesSeeder extends Seeder
     public function run()
     {
             $Curso1=Courses::create([
-                'name' => 'Desarrollo web',
-                'description' => 'Desarrolla aplicaciones web facilmente',
+                'name' => 'Matemáticas 1º ESO',
+                'description' => 'Repaso Trimestre 1',
                 'date_start' => '2021-10-11',
-                'date_end' => '2022-10-11',
+                'date_end' => '2022-12-11',
                 'active' => '1',
             ]);
 
             $Curso2=Courses::create([
-                'name' => 'Desarrollo Aplicaciones web',
-                'description' => 'Crea aplicaciones web facilmente',
-                'date_start' => '2021-10-11',
-                'date_end' => '2022-10-11',
+                'name' => 'Inglés 2',
+                'description' => 'Inglés avanzado',
+                'date_start' => '2021-10-01',
+                'date_end' => '2022-12-15',
                 'active' => '1',
             ]);
 
-
+            $Curso3=Courses::create([
+                'name' => 'Biología',
+                'description' => 'Repaso Curso',
+                'date_start' => '2021-10-01',
+                'date_end' => '2022-12-15',
+                'active' => '1',
+            ]);
     }
 }
 

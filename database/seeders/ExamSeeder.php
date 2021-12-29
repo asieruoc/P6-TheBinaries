@@ -18,14 +18,22 @@ class ExamSeeder extends Seeder
             'id_class' => '1',
             'id_student' => '2',
             'name' => 'Aprobado',
-            'mark' => '10',
+            'mark' => '9.5',
 
         ]);
         $Exam = Exam::create([
             'id_class' => '3',
             'id_student' => '2',
             'name' => 'Suspendido',
-            'mark' => '4',
+            'mark' => '3',
+
+        ]);
+
+        $Exam = Exam::create([
+            'id_class' => '3',
+            'id_student' => '2',
+            'name' => 'Aprobado',
+            'mark' => '7',
 
         ]);
     }
