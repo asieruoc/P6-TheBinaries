@@ -73,7 +73,7 @@ class CoursesController extends Controller
 
 
 
-         return redirect()->route('courses.show',$course);
+         return redirect()->route('courses.showCourses',$course);
 
 
      }
@@ -83,7 +83,7 @@ class CoursesController extends Controller
         $id = Auth::user()->id;
         $user = Auth::user()->tipo;
         if($user == 1){
-            return view('courses.show',['course' => $course]);
+            return view('courses.showCourses',['course' => $course]);
         }
         if($user == 2){
             $enrollment1 = Enrollment::create([
@@ -115,7 +115,7 @@ class CoursesController extends Controller
 
          $course->save();
 
-         return redirect()->route('courses.show',$course);
+         return redirect()->route('courses.showCourses',$course);
 
     }
 

@@ -14,11 +14,11 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('course') }}
+                                {{ __('Curso') }}
                             </span>
                             <div class="float-right">
                                 <a href="{{route('courses.create')}}" class="btn btn-success float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Crear Curso') }}
                                 </a>
                               </div>
                         </div>

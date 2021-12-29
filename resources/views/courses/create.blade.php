@@ -24,7 +24,7 @@
     @enderror
     <br>
     <label>
-        Descripcion: <br>
+        Descripción: <br>
         <input type="text" name="description" value="{{old('description')}}">
 
     </label>
@@ -36,7 +36,7 @@
 @enderror
     <br>
     <label>
-        date_start
+        Fecha de inicio:
         <br>
         <input type="date" name="date_start" value="{{old('date_start')}}">
 
@@ -50,7 +50,7 @@
 
 <br>
     <label>
-        date_end
+        Fecha Final:
         <br>
         <input type="date" name="date_end" value="{{old('date_end')}}">
 
@@ -62,7 +62,7 @@
     @enderror
     <br>
     <label>
-        active:
+        Activo:
         <br>
         <input type="text" name="active" value="{{old('active')}}">
     </label>

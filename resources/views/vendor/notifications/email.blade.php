@@ -44,7 +44,7 @@
 {{ $salutation }}
 @else
 @lang('Regards'),<br>
-{{ config('Pau Egea Cortes') }}
+{{ config('the binaries') }}
 @endif
 
 {{-- Subcopy --}}
