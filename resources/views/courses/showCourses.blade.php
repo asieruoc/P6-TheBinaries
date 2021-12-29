@@ -9,10 +9,12 @@
 
 
 @section('content')
-    <h1>Bienvenido al curso: {{$course->name}} </h1>
+
+    <h2>Bienvenido al curso: {{$course->name}} </h2>
     <a href="{{route('courses.index')}}">Volver a cursos</a>
     <br>
     <a href="{{route('courses.edit',$course)}}">Editar curso</a>
+
 
     <p><strong>Categoría: </strong>{{$course->name}}</p>
     <p><Strong>Descripción:  </Strong>{{$course->description}}</p>

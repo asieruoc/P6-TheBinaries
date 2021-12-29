@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e5eb8592-a2ce-41bc-b19b-6eb4b42ebcc0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mensaje/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mensaje/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_12_23_124028_create_percentatges_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/courses/showCourses.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/courses/showCourses.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="mailErrores" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +50,7 @@
       <updated>1639601047097</updated>
       <workItem from="1639601049085" duration="4107000" />
       <workItem from="1639683119130" duration="9244000" />
+      <workItem from="1640792957777" duration="3833000" />
     </task>
     <task id="LOCAL-00001" summary="FrontEnd completo">
       <created>1639691296887</created>
