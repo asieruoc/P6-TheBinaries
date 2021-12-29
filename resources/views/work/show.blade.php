@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Work</span>
+                            <span class="card-title">Mostrar trabajo</span>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-success" href="{{ route('works.index') }}"> Atrás</a>

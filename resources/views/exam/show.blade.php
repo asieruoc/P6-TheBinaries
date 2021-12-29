@@ -11,7 +11,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Exam</span>
+                            <span class="card-title">Mostrar examen</span>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-success" href="{{ route('exams.index') }}"> Atrás</a>

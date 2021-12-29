@@ -12,7 +12,7 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="float-left">
-                            <span class="card-title">Show Schedule</span>
+                            <span class="card-title">Mostrar Schedule</span>
                         </div>
                         <div class="float-right">
                             <a class="btn btn-success" href="{{ route('schedules.index') }}"> Atrás</a>
