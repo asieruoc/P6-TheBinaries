@@ -15,7 +15,7 @@
                         </div>
                         <div class="float-right">
                             <a class="btn btn-success
-" href="{{ route('percentage.index') }}"> Back</a>
+" href="{{ route('percentage.index') }}"> Atrás</a>
                         </div>
                     </div>
 

@@ -15,7 +15,7 @@
                             <span class="card-title">Show Schedule</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-success" href="{{ route('schedules.index') }}"> Back</a>
+                            <a class="btn btn-success" href="{{ route('schedules.index') }}"> Atrás</a>
                         </div>
                     </div>
 

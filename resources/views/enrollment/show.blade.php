@@ -14,7 +14,7 @@
                             <span class="card-title">Show Enrollment</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-success" href="{{ route('enrollment.index') }}"> Back</a>
+                            <a class="btn btn-success" href="{{ route('enrollment.index') }}"> Atrás</a>
                         </div>
                     </div>
 

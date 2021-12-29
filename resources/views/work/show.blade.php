@@ -14,7 +14,7 @@
                             <span class="card-title">Show Work</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-success" href="{{ route('works.index') }}"> Back</a>
+                            <a class="btn btn-success" href="{{ route('works.index') }}"> Atrás</a>
                         </div>
                     </div>
 
