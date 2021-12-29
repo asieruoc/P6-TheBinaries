@@ -13,7 +13,7 @@
 
                 <div class="card card-default">
                     <div class="card-header">
-                        <span class="card-title">Create Schedule</span>
+                        <span class="card-title">Crear Schedule</span>
                     </div>
                     <div class="card-body">
                         <form method="POST" action="{{ route('schedules.store') }}"  role="form" enctype="multipart/form-data">

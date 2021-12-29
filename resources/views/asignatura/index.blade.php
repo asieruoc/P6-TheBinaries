@@ -19,7 +19,7 @@
 
                              <div class="float-right">
                                 <a href="{{ route('asignaturas.create') }}" class="btn btn-success float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Crear Asignatura') }}
                                 </a>
                               </div>
                         </div>

@@ -14,12 +14,12 @@
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
-                                {{ __('Schedule') }}
+                                {{ __('Schedule (Planificación)') }}
                             </span>
 
                              <div class="float-right">
                                 <a href="{{ route('schedules.create') }}" class="btn btn-success btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                  {{ __('Crear Nueva') }}
                                 </a>
                               </div>
                         </div>

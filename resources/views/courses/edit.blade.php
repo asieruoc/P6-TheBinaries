@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <h1>Editar un cursos</h1>
+    <h1>Editar un curso</h1>
 
 
 
@@ -24,7 +24,7 @@
         @enderror
         <br>
         <label>
-            Descripcion: <br>
+            Descripción: <br>
             <input type="text" name="description" value="{{old('description', $course->description)}}">
 
         </label>
@@ -36,7 +36,7 @@
     @enderror
     <br>
     <label>
-        date_start
+        Fecha de inicio:
         <br>
         <input type="date" name="date_start" value="{{old('date_start', $course->date_start)}}">
 
@@ -50,7 +50,7 @@
 
 <br>
     <label>
-        date_end
+        Fecha Fin:
         <br>
         <input type="date" name="date_end" value="{{old('date_end',$course->date_end)}}">
 
@@ -63,7 +63,7 @@
 
     <br>
         <label>
-            Active: <br>
+            Activo: <br>
             <input type="text" name="active" value="{{old('active', $course->active)}}">
 
         </label>
